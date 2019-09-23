@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mypurple: #E35d92;
+    --mypink: #f8a1ac;
+    --mygrey: #f1f2f6;
+    --myblue: #49bbf0;
+    --myblack: #000;
+}
+
+body {
+    font-size: 20px;
+    /**font-family: 'Inconsolata', monospace;**/
+    font-family: 'Abel', sans-serif;
+
+}
+
+p {
+    font-size: 20px;
+}
+
+/*-----------------*/
+/* Header */
+/*-----------------*/
+.contenido-header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/jean1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenido-header .fondo {
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../img/confeti.png);
+}
+
+.contenido-header .logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/*-------------------*/
+/* Menú */
+/*-------------------*/
+
+.menu {
+    background-color: var(--mypurple);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.menu a{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26px;
+    background-color: var(--mypurple);
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: var(--mygrey);
+    text-decoration: none;
+}
+
+.menu a:hover{
+    transform: translateY(18px);
+    background-color: var(--mypink);
+}
+
+/*---------------*/
+/* Sección Nosotros*/
+/*---------------*/
+
+.nosotros{
+    margin-bottom: 60px;
+}
+
+.subtitulo{
+    font-size: 20px;
+    color: var(--mypurple);
+    font-family: serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo span{
+    background-color: var(--mygrey);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+}
+
+.subtitulo::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: var(--mypurple);
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+
+.nosotros .titulo{
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.nosotros .enlace{
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--mypink);
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    border-bottom: 1px solid transparent;
+    letter-spacing: 1px;
+}
+
+.nosotros .enlace:hover{
+    border-bottom: 1px solid var(--mypink);
+    letter-spacing: 3px;
+}
+
+/*---------------*/
+/* Sección Servicios */
+/*-------------*/
+
+.servicios{
+    background: var(--mygrey);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.servicios .titulo{
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.servicios .productos{
+    position: relative;
+    width: 100%;
+}
+
+.servicios .overlay{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--mypurple);
+    overflow: hidden;
+    transition: .5s ease all;
+}
+
+.servicios .productos:hover .overlay{
+    width: 100%;
+    opacity: .8;
+}
+
+.servicios .productos .overlay-texto{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: white;
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white; 
+}
+
+.servicios .btn-productos{
+    background-color: var(--mypurple);
+    color: white;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+}
+
+.servicios .btn-productos:hover{
+    background-color: transparent;
+    color: var(--mypurple);
+    border: 2px solid var(--mypurple);
+}
+
+/*-----------------*/
+/* Separador */
+/*-----------------*/
+
+.separador{
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/jean3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.separador p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/*-------------*/
+/* Acerca de nosotros */
+/*------------*/
+
+.acercade{
+    margin-bottom: 60px;
+}
+
+.acercade img{
+    width: 50px;
+}
+
+/*--------------------*/
+/* Galeria */
+/*--------------------*/
+
+.galeria{
+    margin-bottom: 60px;
+}
+
+.galeria img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*------------------*/
+/* Contacto */
+/*-----------------*/
+
+.contacto{
+    margin-bottom: 10px;
+}
+
+.contacto img{
+    width: 50px;
+}
+
+/*------------------*/
+/* Redes sociales */
+/*----------------*/
+
+.redes-sociales{
+    padding: 10px;
+    background-color: var(--mypink);
+}
+
+.redes-sociales img{
+    padding: 5px;
+    border-radius: 100%;
+    width: 50px;
+    transition: .3 ease all;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+    color: black;
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.2);
+}
+
+/**/
+/* Media queries */
+/**/
+
+@media screen and (max-width: 992px){
+    p{
+        font-size: 18px;
+    }
+
+    .menu a{}
+}
