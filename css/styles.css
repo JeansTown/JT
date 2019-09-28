@@ -53,6 +53,7 @@ p {
 /* Menú */
 /*-------------------*/
 
+
 .menu {
     background-color: var(--mypurple);
     width: 100%;
@@ -83,6 +84,7 @@ p {
     transform: translateY(18px);
     background-color: var(--mypink);
 }
+
 
 /*---------------*/
 /* Sección Nosotros*/
@@ -310,5 +312,7 @@ p {
         font-size: 18px;
     }
 
-    .menu a{}
+    .menu a{
+        font-size: 18px;
+    }
 }
