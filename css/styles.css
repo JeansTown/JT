@@ -146,6 +146,10 @@ p {
     letter-spacing: 3px;
 }
 
+.nosotros p{
+    margin-bottom: 60px;
+}
+
 /*---------------*/
 /* Sección Servicios */
 /*-------------*/
@@ -199,22 +203,22 @@ p {
     border-bottom: 1px solid white; 
 }
 
-.servicios .btn-productos{
-    background-color: var(--mypurple);
+.servicios .link{
+    text-decoration: none;
     color: white;
-    padding: 7px 20px;
+    background-color: var(--mypurple);
     text-transform: uppercase;
+    padding: 7px 20px;
     font-size: 16px;
     border: 2px solid transparent;
     transition: .3s ease;
 }
 
-.servicios .btn-productos:hover{
+.servicios .link:hover{
     background-color: transparent;
     color: var(--mypurple);
-    border: 2px solid var(--mypurple);
+    border:2px solid var(--mypurple);
 }
-
 /*-----------------*/
 /* Separador */
 /*-----------------*/
